@@ -1,0 +1,945 @@
+[profile=Default version=0x00000005
+  [controllers
+    [controller=a878de15-5a3e-44b3-8128-6ccbbe905bd2 group='X-56 Control System'
+      [member=5572b81b-c76b-40fa-8fb6-a3ee6d1a870c name=Stick shortname=Stick]
+      [controls
+        [button=0x00090001 name=Trigger]
+        [button=0x00090002 name=A]
+        [button=0x00090003 name=B]
+        [button=0x00090005 name=D]
+        [button=0x00090006 name=Pinky]
+        [hat=0x00090007 name=H1 way=5]
+        [hat=0x0009000B name=H2 way=5]
+        [slider name=Mode
+          [button=0x0009000F name='Mode 1' latchable=false]
+          [button=0x00090010 name='Mode 2' latchable=false]
+          [button=0x00090011 name='Mode 3' latchable=false]]
+        [hat=0x00010039 name=POV way=5]
+        [axis=0x00010030 name='X Axis']
+        [axis=0x00010031 name='Y Axis']
+        [axis=0x00010035 name=Twist]
+        [ministick=0x00090004 name='C Stick'
+          [button=0x00090004 name='C Stick Click']
+          [axis=0x00010033 name='C Stick X']
+          [axis=0x00010034 name='C Stick Y']]]
+      [shifts
+        [shift=346dbae3-9684-4b7d-9943-887e7a32d02c name='Battery OFF'
+          [selectionset
+            [buttoncombo
+              [buttonhid=0x0009000F]]]
+          [assignments
+            [button=0x00090001 role=bands
+              [bands
+                [band=1 command=5d27c46f-63ca-483b-bf4f-47732368b73f]]]
+            [button=0x00090002 role=bands
+              [bands
+                [band=1 command=92075c52-f401-47a1-ba75-982e45c82292]]]
+            [button=0x00090003 role=bands
+              [bands
+                [band=1 command=b36dc9c0-1efd-4982-8a42-3e660ad92862]]]
+            [button=0x00090005 role=bands
+              [bands
+                [band=1 command=be723a76-a92e-41fe-b458-4534ea781d4e]]]
+            [button=0x00090006 role=bands
+              [bands
+                [band=1 command=e12e040b-9caa-4fbf-96d5-d59abc450fba]]]
+            [hat=0x00090007 role=bands
+              [bands
+                [band=1 command=49dc9ee7-0cd4-4241-9ad0-597290dc404e]
+                [band=3 command=07a416d4-3baf-41a5-ad91-f2f7a4cbcb9e]
+                [band=5 command=17606e3f-521d-4a50-9617-7f5cb0fa6c22]
+                [band=7 command=e1b6959f-24d2-4ec1-bced-7def0f3ba47a]]]
+            [hat=0x0009000B role=bands
+              [bands
+                [band=1 command=d3cfde0d-8631-41af-aa35-e2ff81f2d42a]
+                [band=3 command=bc9386aa-e181-42c1-8d98-074e2066d9ee]
+                [band=5 command=4b2c81bd-ae8d-4d4e-859a-16e40a85bbc9]
+                [band=7 command=0fcaea8b-9aab-4927-9690-64ec729f62b7]]
+              [mouse]]
+            [hat=0x00010039 role=bands
+              [bands
+                [band=1 command=8ece0e4b-a64b-4223-8aea-e421ae05556c]
+                [band=2 command=1863517d-1b85-4a51-834c-3a0f39597ef0]
+                [band=3 command=1863517d-1b85-4a51-834c-3a0f39597ef0]
+                [band=4 command=07a416d4-3baf-41a5-ad91-f2f7a4cbcb9e]
+                [band=5 command=98f0d0ba-5135-4887-84ac-ba0bcfcb5e59]
+                [band=6 command=e1b6959f-24d2-4ec1-bced-7def0f3ba47a]
+                [band=7 command=8869c4e1-660f-4a9b-a740-d6775b1b82bb]
+                [band=8 command=8869c4e1-660f-4a9b-a740-d6775b1b82bb]]]
+            [ministick=0x00090004
+              [button=0x00090004 role=unprogrammed
+                [bands
+                  [band=1 command=2d601d57-1703-4f0c-94eb-9ef66f375af8]]]
+              [axis=0x00010033 role=unprogrammed
+                [bands
+                  [band=33]
+                  [band=67]
+                  [band=100]]
+                [directional=29]]
+              [axis=0x00010034 role=unprogrammed
+                [directional=29]]]]]
+        [shift=c5d5facc-3147-4209-8bee-ea0864f09c02 fallback=346dbae3-9684-4b7d-9943-887e7a32d02c name='Battery ON'
+          [selectionset
+            [buttoncombo
+              [buttonhid=0x00090010]]]
+          [assignments
+            [button=0x00090001
+              [bands
+                [band=1 command=5d27c46f-63ca-483b-bf4f-47732368b73f]]]
+            [button=0x00090002
+              [bands
+                [band=1 command=92075c52-f401-47a1-ba75-982e45c82292]]]
+            [button=0x00090003
+              [bands
+                [band=1 command=b36dc9c0-1efd-4982-8a42-3e660ad92862]]]
+            [button=0x00090005
+              [bands
+                [band=1 command=be723a76-a92e-41fe-b458-4534ea781d4e]]]
+            [button=0x00090006
+              [bands
+                [band=1 command=e12e040b-9caa-4fbf-96d5-d59abc450fba]]]
+            [hat=0x00090007
+              [bands
+                [band=1 command=49dc9ee7-0cd4-4241-9ad0-597290dc404e]
+                [band=3 command=fc054439-4471-425e-b17c-3fe1cf6a31da]
+                [band=5 command=17606e3f-521d-4a50-9617-7f5cb0fa6c22]
+                [band=7 command=242d876a-e3b0-4fdd-aa69-519e38fa86f4]]]
+            [hat=0x0009000B
+              [bands
+                [band=1 command=d3cfde0d-8631-41af-aa35-e2ff81f2d42a]
+                [band=3 command=bc9386aa-e181-42c1-8d98-074e2066d9ee]
+                [band=5 command=4b2c81bd-ae8d-4d4e-859a-16e40a85bbc9]
+                [band=7 command=0fcaea8b-9aab-4927-9690-64ec729f62b7]]]
+            [hat=0x00010039
+              [bands
+                [band=1 command=8ece0e4b-a64b-4223-8aea-e421ae05556c]
+                [band=2 command=1863517d-1b85-4a51-834c-3a0f39597ef0]
+                [band=3 command=1863517d-1b85-4a51-834c-3a0f39597ef0]
+                [band=4 command=07a416d4-3baf-41a5-ad91-f2f7a4cbcb9e]
+                [band=5 command=98f0d0ba-5135-4887-84ac-ba0bcfcb5e59]
+                [band=6 command=e1b6959f-24d2-4ec1-bced-7def0f3ba47a]
+                [band=7 command=8869c4e1-660f-4a9b-a740-d6775b1b82bb]
+                [band=8 command=8869c4e1-660f-4a9b-a740-d6775b1b82bb]]]
+            [ministick=0x00090004
+              [axis=0x00010033 role=unprogrammed]
+              [axis=0x00010034 role=unprogrammed]]]]
+        [shift=952c5f2c-9187-4327-9132-32ea022f0d6d fallback=c5d5facc-3147-4209-8bee-ea0864f09c02 name='Alternator ON/OFF'
+          [selectionset
+            [buttoncombo
+              [buttonhid=0x00090011]]]
+          [assignments
+            [button=0x00090001
+              [bands
+                [band=1 command=5d27c46f-63ca-483b-bf4f-47732368b73f]]]
+            [button=0x00090002
+              [bands
+                [band=1 command=92075c52-f401-47a1-ba75-982e45c82292]]]
+            [button=0x00090003
+              [bands
+                [band=1 command=b36dc9c0-1efd-4982-8a42-3e660ad92862]]]
+            [button=0x00090005
+              [bands
+                [band=1 command=be723a76-a92e-41fe-b458-4534ea781d4e]]]
+            [button=0x00090006
+              [bands
+                [band=1 command=e12e040b-9caa-4fbf-96d5-d59abc450fba]]]
+            [hat=0x00090007
+              [bands
+                [band=1 command=49dc9ee7-0cd4-4241-9ad0-597290dc404e]
+                [band=3 command=fc054439-4471-425e-b17c-3fe1cf6a31da]
+                [band=5 command=17606e3f-521d-4a50-9617-7f5cb0fa6c22]
+                [band=7 command=242d876a-e3b0-4fdd-aa69-519e38fa86f4]]]
+            [hat=0x0009000B
+              [bands
+                [band=1 command=d3cfde0d-8631-41af-aa35-e2ff81f2d42a]
+                [band=3 command=bc9386aa-e181-42c1-8d98-074e2066d9ee]
+                [band=5 command=4b2c81bd-ae8d-4d4e-859a-16e40a85bbc9]
+                [band=7 command=0fcaea8b-9aab-4927-9690-64ec729f62b7]]]
+            [hat=0x00010039
+              [bands
+                [band=1 command=8ece0e4b-a64b-4223-8aea-e421ae05556c]
+                [band=2 command=1863517d-1b85-4a51-834c-3a0f39597ef0]
+                [band=3 command=1863517d-1b85-4a51-834c-3a0f39597ef0]
+                [band=4 command=07a416d4-3baf-41a5-ad91-f2f7a4cbcb9e]
+                [band=5 command=98f0d0ba-5135-4887-84ac-ba0bcfcb5e59]
+                [band=6 command=e1b6959f-24d2-4ec1-bced-7def0f3ba47a]
+                [band=7 command=8869c4e1-660f-4a9b-a740-d6775b1b82bb]
+                [band=8 command=8869c4e1-660f-4a9b-a740-d6775b1b82bb]]]
+            [ministick=0x00090004
+              [axis=0x00010033 role=unprogrammed
+                [bands
+                  [band=33]
+                  [band=67]
+                  [band=100]]
+                [mouse-x=15]]]]]]]
+    [controller=f10e3b85-8822-4cd5-9a18-d6bd299c26d8 group='X-56 Control System'
+      [member=1c5dc848-7201-4f31-b32f-ad723903e03e name=Throttle shortname=Throttle]
+      [controls
+        [button=0x00090001 name=E]
+        [button=0x00090002 name='F Push']
+        [button=0x00090003 name='G Push' latched=true]
+        [button=0x00090004 name=I latched=true]
+        [button=0x00090005 name=H latched=true]
+        [button=0x00090006 name='SW 1']
+        [button=0x00090007 name='SW 2']
+        [button=0x00090008 name='SW 3']
+        [button=0x00090009 name='SW 4']
+        [button=0x0009000A name='SW 5']
+        [button=0x0009000B name='SW 6']
+        [button=0x0009000C name='TGL 1 Up']
+        [button=0x0009000D name='TGL 1 Down']
+        [button=0x0009000E name='TGL 2 Up']
+        [button=0x0009000F name='TGL 2 Down']
+        [button=0x00090010 name='TGL 3 Up']
+        [button=0x00090011 name='TGL 3 Down']
+        [button=0x00090012 name='TGL 4 Up']
+        [button=0x00090013 name='TGL 4 Down' latched=true]
+        [hat=0x00090014 name=H3 way=5]
+        [hat=0x00090018 name=H4 way=5]
+        [button=0x0009001C name='K1 Up']
+        [button=0x0009001D name='K1 Down']
+        [button=0x0009001E name='Scroll FWD']
+        [button=0x0009001F name='Scroll BCK']
+        [slider name=Mode
+          [button=0x00090022 name='Mode 1' latchable=false]
+          [button=0x00090023 name='Mode 2' latchable=false]
+          [button=0x00090024 name='Mode 3' latchable=false]]
+        [button=0x00090021 name=SLD]
+        [axis=0x00010030 name='Left Throttle']
+        [axis=0x00010031 name='Right Throttle']
+        [axis=0x00010032 name='Rotary 1']
+        [axis=0x00010035 name='Rotary 2']
+        [axis=0x00010037 name='Rotary 3']
+        [axis=0x00010036 name='Rotary 4']
+        [ministick=0x00090020 name='Mouse Ministick'
+          [button=0x00090020 name='Mouse Ministick Click']
+          [axis=0x00010033 name='Mouse X Axis']
+          [axis=0x00010034 name='Mouse Y Axis']]]
+      [shifts
+        [shift=346dbae3-9684-4b7d-9943-887e7a32d02c fallback=346dbae3-9684-4b7d-9943-887e7a32d02c name='Battery OFF'
+          [assignments
+            [button=0x00090001 role=bands
+              [bands
+                [band=1 command=edabf87e-9530-4109-939c-c55d01ed857f]]]
+            [button=0x00090002 role=bands
+              [bands
+                [band=1 command=7c5586c0-10ec-452d-bfb1-a9291b26bc4b]]]
+            [button=0x00090003 role=bands
+              [bands
+                [band=1 command=bfa3bb84-7ea7-497a-bcfc-e6eea9e15008]]]
+            [button=0x00090004 role=bands
+              [bands
+                [band=1 command=3eb144fb-d44b-491d-aa94-f2a3b01268b3]]]
+            [button=0x00090005 role=bands
+              [bands
+                [band=1 command=d02cfd5b-00e1-43be-b7f8-2fb3ca345ddd]]]
+            [button=0x00090006 role=bands
+              [bands
+                [band=1 command=72752e86-2431-41b7-8610-d75232aa196f]]]
+            [button=0x00090007 role=bands
+              [bands
+                [band=1 command=d5bfea03-4114-47ff-97b9-7793670a3819]]]
+            [button=0x00090008 role=bands
+              [bands
+                [band=1 command=722e2ff2-6334-4801-bd8f-b7e48b1e47f0]]]
+            [button=0x00090009 role=bands
+              [bands
+                [band=1 command=b58154e9-53d2-484d-8f22-eaa894068525]]]
+            [button=0x0009000A role=bands
+              [bands
+                [band=1 command=58396d87-e54e-4040-bb2f-4f2ee5bd1962]]]
+            [button=0x0009000B role=bands
+              [bands
+                [band=1 command=a9cf85bf-8119-4b4f-9553-6c0ceeb60935]]]
+            [button=0x0009000C role=bands
+              [bands
+                [band=1 command=16eaeab0-d50b-4ec1-9eac-abdcd6352227]]]
+            [button=0x0009000D role=bands
+              [bands
+                [band=1 command=fda82612-f278-498e-ac47-957ab4f7bbe5]]]
+            [button=0x0009000E role=bands
+              [bands
+                [band=1 command=82265ced-14fc-4a74-9142-6d7a82d5727a]]]
+            [button=0x0009000F role=bands
+              [bands
+                [band=1 command=d43ffd7f-b45c-4ac3-b998-36b9b94413e8]]]
+            [button=0x00090010 role=bands
+              [bands
+                [band=1 command=488a15c2-95fd-44d5-86af-e518793f2686]]]
+            [button=0x00090011 role=bands
+              [bands
+                [band=1 command=33bad094-8507-4aca-98f3-5da300cd5f2b]]]
+            [button=0x00090012 role=bands
+              [bands
+                [band=1 command=d43ffd7f-b45c-4ac3-b998-36b9b94413e8]]]
+            [button=0x00090013 role=bands
+              [bands
+                [band=1 command=126b89cf-81c6-440f-88b6-f268ec919fbc]]]
+            [hat=0x00090014 role=bands
+              [bands
+                [band=1 command=caeaabe4-3db6-4a54-b562-c9e12dc336a5]
+                [band=3 command=53b6a0dd-9579-4d1a-8fe4-b279500c114c]
+                [band=5 command=91e1852b-58bd-48e9-8590-65628f7aff5f]
+                [band=7 command=6ec576f1-36b3-4a98-932c-734abfa68c67]]
+              [mouse]]
+            [hat=0x00090018 role=bands
+              [bands
+                [band=1 command=a68827d5-4b93-46b0-b4e1-1fbe9c108a4c]
+                [band=3 command=13d42aad-6175-4053-a6ae-f504d101eaad]
+                [band=5 command=c309b9cd-74bc-4b51-8057-2029b81d8171]
+                [band=7 command=b600c9c3-5df2-49e7-b870-b431fa60f52b]]]
+            [button=0x0009001C role=bands
+              [bands
+                [band=1 command=42ee19a2-a5ba-428e-ba97-2df2f41ead65]]]
+            [button=0x0009001D role=bands
+              [bands
+                [band=1 command=2ecc85cd-0867-4d40-a928-62f8e0adbb15]]]
+            [button=0x0009001E role=bands]
+            [button=0x0009001F role=bands]
+            [button=0x00090021 role=bands
+              [bands
+                [band=1 command=23abb0d5-9cbb-4dc7-a414-a8e2d2830fba]]]
+            [axis=0x00010030 role=bands
+              [bands
+                [band=80 command=fc98ff65-cc46-4bb0-b69d-6288ba936a71]
+                [band=90 command=4819fafd-9db5-4162-9d11-ad5f2c8789ea]
+                [band=100]]]
+            [axis=0x00010032 role=unprogrammed
+              [directional=29 increment=e782f398-0347-40d0-8a01-64fba669dfe5 decrement=5ade326e-9428-474e-87b6-cb93f46e8d3d]
+              [bands
+                [band=45 command=a68827d5-4b93-46b0-b4e1-1fbe9c108a4c]
+                [band=55]
+                [band=100 command=c309b9cd-74bc-4b51-8057-2029b81d8171]]]
+            [axis=0x00010035
+              [bands
+                [band=33]
+                [band=67]
+                [band=100]]]
+            [axis=0x00010036 role=unprogrammed
+              [bands
+                [band=33]
+                [band=67]
+                [band=100]]]
+            [ministick=0x00090020
+              [button=0x00090020 role=bands]
+              [axis=0x00010033 role=unprogrammed
+                [mouse-x=15]
+                [bands
+                  [band=33]
+                  [band=67]
+                  [band=100]]]
+              [axis=0x00010034 role=unprogrammed
+                [mouse-y=15]]]]
+          [selectionset
+            [buttoncombo
+              [buttonhid=0x00090022]]]
+          [shiftcommand=d2df8c1c-2011-4f8a-af1c-58b7e65cee92]]
+        [shift=c5d5facc-3147-4209-8bee-ea0864f09c02 fallback=346dbae3-9684-4b7d-9943-887e7a32d02c name='Battery ON'
+          [assignments
+            [button=0x00090001
+              [bands
+                [band=1 command=edabf87e-9530-4109-939c-c55d01ed857f]]]
+            [button=0x00090002
+              [bands
+                [band=1 command=7c5586c0-10ec-452d-bfb1-a9291b26bc4b]]]
+            [button=0x00090003
+              [bands
+                [band=1 command=c3154ea6-0eca-4d58-ae00-c1159f78aee1]]]
+            [button=0x00090004
+              [bands
+                [band=1 command=c309b9cd-74bc-4b51-8057-2029b81d8171]]]
+            [button=0x00090005
+              [bands
+                [band=1 command=a68827d5-4b93-46b0-b4e1-1fbe9c108a4c]]]
+            [button=0x00090006
+              [bands
+                [band=1 command=722e2ff2-6334-4801-bd8f-b7e48b1e47f0]]]
+            [button=0x00090007
+              [bands
+                [band=1 command=72752e86-2431-41b7-8610-d75232aa196f]]]
+            [button=0x00090008
+              [bands
+                [band=1 command=d5bfea03-4114-47ff-97b9-7793670a3819]]]
+            [button=0x00090009
+              [bands
+                [band=1 command=b58154e9-53d2-484d-8f22-eaa894068525]]]
+            [button=0x0009000A
+              [bands
+                [band=1 command=58396d87-e54e-4040-bb2f-4f2ee5bd1962]]]
+            [button=0x0009000B
+              [bands
+                [band=1 command=a9cf85bf-8119-4b4f-9553-6c0ceeb60935]]]
+            [button=0x0009000C
+              [bands
+                [band=1 command=8da264bd-1eb5-45f2-a76d-5f9aff8fa337]]]
+            [button=0x0009000D
+              [bands
+                [band=1 command=84ba219a-a11f-4fef-ae3c-bb31d71bc209]]]
+            [button=0x0009000E
+              [bands
+                [band=1 command=9c84db89-f913-478f-bb14-9029354abb52]]]
+            [button=0x0009000F
+              [bands
+                [band=1 command=e177c635-8498-4506-ac5e-4206d786a099]]]
+            [button=0x00090010
+              [bands
+                [band=1 command=16eaeab0-d50b-4ec1-9eac-abdcd6352227]]]
+            [button=0x00090011
+              [bands
+                [band=1 command=1155c681-9446-4239-a2fe-98eeba6accdf]]]
+            [button=0x00090012
+              [bands
+                [band=1 command=932752ca-732f-45c4-a78f-317c46345add]]]
+            [button=0x00090013
+              [bands
+                [band=1 command=1155c681-9446-4239-a2fe-98eeba6accdf]]]
+            [hat=0x00090014
+              [bands
+                [band=1 command=caeaabe4-3db6-4a54-b562-c9e12dc336a5]
+                [band=3 command=53b6a0dd-9579-4d1a-8fe4-b279500c114c]
+                [band=5 command=91e1852b-58bd-48e9-8590-65628f7aff5f]
+                [band=7 command=6ec576f1-36b3-4a98-932c-734abfa68c67]]]
+            [hat=0x00090018
+              [bands
+                [band=1]
+                [band=3 command=13d42aad-6175-4053-a6ae-f504d101eaad]
+                [band=5]
+                [band=7 command=b600c9c3-5df2-49e7-b870-b431fa60f52b]]]
+            [button=0x0009001E
+              [bands
+                [band=1 command=4b2c81bd-ae8d-4d4e-859a-16e40a85bbc9]]]
+            [axis=0x00010030
+              [bands
+                [band=80 command=fc98ff65-cc46-4bb0-b69d-6288ba936a71]
+                [band=90 command=4819fafd-9db5-4162-9d11-ad5f2c8789ea]
+                [band=100]]
+              [mouse-x=15]
+              [mouse-y=15]]
+            [axis=0x00010031
+              [bands
+                [band=33]
+                [band=67]
+                [band=100]]]
+            [axis=0x00010032
+              [directional=29 increment=439a5d16-592f-45e9-ae30-14a0cface6b2 decrement=fa590599-ff04-4c95-a01c-3955a6b29aa5]
+              [bands
+                [band=33 command=439a5d16-592f-45e9-ae30-14a0cface6b2]
+                [band=67]
+                [band=100 command=fa590599-ff04-4c95-a01c-3955a6b29aa5]]]
+            [axis=0x00010035
+              [bands
+                [band=33]
+                [band=67]
+                [band=100]]
+              [mouse-x=15]]
+            [axis=0x00010036
+              [directional=59]
+              [bands
+                [band=33]
+                [band=67]
+                [band=100]]]
+            [ministick=0x00090020
+              [axis=0x00010033 role=unprogrammed
+                [mouse-x=15]]
+              [axis=0x00010034 role=unprogrammed
+                [mouse-y=15]]]]
+          [selectionset
+            [buttoncombo
+              [buttonhid=0x00090023]]]
+          [shiftcommand=5835af3f-7159-4945-ad12-7b54f4cc531f]]
+        [shift=952c5f2c-9187-4327-9132-32ea022f0d6d fallback=c5d5facc-3147-4209-8bee-ea0864f09c02 name=Start
+          [selectionset
+            [buttoncombo
+              [buttonhid=0x00090024]]]
+          [assignments
+            [button=0x00090001
+              [bands
+                [band=1 command=edabf87e-9530-4109-939c-c55d01ed857f]]]
+            [button=0x00090002
+              [bands
+                [band=1 command=7c5586c0-10ec-452d-bfb1-a9291b26bc4b]]]
+            [button=0x00090003
+              [bands
+                [band=1 command=c3154ea6-0eca-4d58-ae00-c1159f78aee1]]]
+            [button=0x00090004
+              [bands
+                [band=1 command=c309b9cd-74bc-4b51-8057-2029b81d8171]]]
+            [button=0x00090005
+              [bands
+                [band=1 command=a68827d5-4b93-46b0-b4e1-1fbe9c108a4c]]]
+            [button=0x00090006
+              [bands
+                [band=1 command=722e2ff2-6334-4801-bd8f-b7e48b1e47f0]]]
+            [button=0x00090007
+              [bands
+                [band=1 command=72752e86-2431-41b7-8610-d75232aa196f]]]
+            [button=0x00090008
+              [bands
+                [band=1 command=d5bfea03-4114-47ff-97b9-7793670a3819]]]
+            [button=0x00090009
+              [bands
+                [band=1 command=b58154e9-53d2-484d-8f22-eaa894068525]]]
+            [button=0x0009000A
+              [bands
+                [band=1 command=58396d87-e54e-4040-bb2f-4f2ee5bd1962]]]
+            [button=0x0009000B
+              [bands
+                [band=1 command=a9cf85bf-8119-4b4f-9553-6c0ceeb60935]]]
+            [button=0x0009000C role=bands
+              [bands
+                [band=1 command=8da264bd-1eb5-45f2-a76d-5f9aff8fa337]]]
+            [button=0x0009000D role=bands
+              [bands
+                [band=1 command=84ba219a-a11f-4fef-ae3c-bb31d71bc209]]]
+            [button=0x0009000E role=bands
+              [bands
+                [band=1 command=9c84db89-f913-478f-bb14-9029354abb52]]]
+            [button=0x0009000F role=bands
+              [bands
+                [band=1 command=e177c635-8498-4506-ac5e-4206d786a099]]]
+            [button=0x00090010 role=bands
+              [bands
+                [band=1 command=5d1eee12-1685-4c40-a2b5-05c2b4c7011d]]]
+            [button=0x00090011 role=bands
+              [bands
+                [band=1 command=b7183c74-f64e-4663-b862-9e76484fd2dd]]]
+            [button=0x00090012 role=bands
+              [bands
+                [band=1 command=b1641945-dc15-4142-9a80-159ac6c1ec03]]]
+            [button=0x00090013 role=bands
+              [bands
+                [band=1 command=42467673-e271-4a17-b4d6-53a595f8732e]]]
+            [hat=0x00090014
+              [bands
+                [band=1 command=caeaabe4-3db6-4a54-b562-c9e12dc336a5]
+                [band=3 command=53b6a0dd-9579-4d1a-8fe4-b279500c114c]
+                [band=5 command=91e1852b-58bd-48e9-8590-65628f7aff5f]
+                [band=7 command=6ec576f1-36b3-4a98-932c-734abfa68c67]]]
+            [hat=0x00090018
+              [bands
+                [band=1]
+                [band=3 command=13d42aad-6175-4053-a6ae-f504d101eaad]
+                [band=5]
+                [band=7 command=b600c9c3-5df2-49e7-b870-b431fa60f52b]]]
+            [button=0x0009001E
+              [bands
+                [band=1 command=d3cfde0d-8631-41af-aa35-e2ff81f2d42a]]]
+            [axis=0x00010030
+              [bands
+                [band=80 command=fc98ff65-cc46-4bb0-b69d-6288ba936a71]
+                [band=90 command=4819fafd-9db5-4162-9d11-ad5f2c8789ea]
+                [band=100]]]
+            [axis=0x00010032
+              [directional=29 increment=e782f398-0347-40d0-8a01-64fba669dfe5 decrement=5ade326e-9428-474e-87b6-cb93f46e8d3d]]
+            [ministick=0x00090020
+              [axis=0x00010033 role=unprogrammed
+                [mouse-x=15]]
+              [axis=0x00010034 role=unprogrammed
+                [mouse-y=15]]]]
+          [shiftcommand]]]]]
+  [commands
+    [actioncommand=5d27c46f-63ca-483b-bf4f-47732368b73f name=Brakes
+      [actionblock
+        [action device=keyboard usage=0x00000063 page=0x00000007 value=0x00000001]]]
+    [actioncommand=be723a76-a92e-41fe-b458-4534ea781d4e name='Toggle parking brakes'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000037 page=0x00000007 value=0x00000001]]]
+    [actioncommand=8ece0e4b-a64b-4223-8aea-e421ae05556c name='Trim down'
+      [actionblock
+        [action device=keyboard usage=0x0000005F page=0x00000007 value=0x00000001]]]
+    [actioncommand=17606e3f-521d-4a50-9617-7f5cb0fa6c22 name='Increase flaps'
+      [actionblock
+        [action device=keyboard usage=0x00000040 page=0x00000007 value=0x00000001]]]
+    [actioncommand=7c5586c0-10ec-452d-bfb1-a9291b26bc4b name='Set altimeter'
+      [actionblock
+        [action device=keyboard usage=0x00000005 page=0x00000007 value=0x00000001]]]
+    [actioncommand=13d42aad-6175-4053-a6ae-f504d101eaad name=ATC
+      [actionblock
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000064 page=0x00000007 value=0x00000001]]]
+    [actioncommand=92075c52-f401-47a1-ba75-982e45c82292 name='Toggle autopilot'
+      [actionblock
+        [action device=keyboard usage=0x0000001A page=0x00000007 value=0x00000001]]]
+    [actioncommand=b1641945-dc15-4142-9a80-159ac6c1ec03 name='Toggle AP altitude'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000B page=0x00000007 value=0x00000001]]]
+    [actioncommand=bc9386aa-e181-42c1-8d98-074e2066d9ee name='Toggle AP approach'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000014 page=0x00000007 value=0x00000001]]]
+    [actioncommand=498ac0a1-64a0-4d0d-a877-888b14fdc302 name='Toggle AP backcourse'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000B page=0x00000007 value=0x00000001]]]
+    [actioncommand=8da264bd-1eb5-45f2-a76d-5f9aff8fa337 name='Toggle AP FL change'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000009 page=0x00000007 value=0x00000001]]]
+    [actioncommand=9c84db89-f913-478f-bb14-9029354abb52 name='Toggle AP heading'
+      [actionblock
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000001C page=0x00000007 value=0x00000001]]]
+    [actioncommand=0fcaea8b-9aab-4927-9690-64ec729f62b7 name='Toggle AP localizer'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000012 page=0x00000007 value=0x00000001]]]
+    [actioncommand=5d1eee12-1685-4c40-a2b5-05c2b4c7011d name='Toggle AP VS'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000019 page=0x00000007 value=0x00000001]]]
+    [actioncommand=81156205-032b-40f6-90cf-07e5106b2e64 name='Toggle yaw damper'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000007 page=0x00000007 value=0x00000001]]]
+    [actioncommand=e4fa7345-d1ba-4c24-92f9-d50e4b69404d name='Toggle AP flight director'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000009 page=0x00000007 value=0x00000001]]]
+    [actioncommand=caeaabe4-3db6-4a54-b562-c9e12dc336a5 name='Look forward'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000002C page=0x00000007 value=0x00000001]]]
+    [actioncommand=53b6a0dd-9579-4d1a-8fe4-b279500c114c name='Next instrument view'
+      [actionblock
+        [action device=keyboard usage=0x00000014 page=0x00000007 value=0x00000001]]]
+    [actioncommand=6ec576f1-36b3-4a98-932c-734abfa68c67 name='Previous instrument view'
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000014 page=0x00000007 value=0x00000001]]]
+    [actioncommand=edabf87e-9530-4109-939c-c55d01ed857f name='View mode'
+      [actionblock
+        [action device=keyboard usage=0x0000004D page=0x00000007 value=0x00000001]]]
+    [actioncommand=91e1852b-58bd-48e9-8590-65628f7aff5f name='Toggle intrusment view'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000001E page=0x00000007 value=0x00000001]]]
+    [actioncommand=1863517d-1b85-4a51-834c-3a0f39597ef0 name='Look forward right'
+      [actionblock
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000004F page=0x00000007 value=0x00000001]]]
+    [actioncommand=07a416d4-3baf-41a5-ad91-f2f7a4cbcb9e name='Look backward right'
+      [actionblock
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000004F page=0x00000007 value=0x00000001]]]
+    [actioncommand=e1b6959f-24d2-4ec1-bced-7def0f3ba47a name='Look backward left'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000050 page=0x00000007 value=0x00000001]]]
+    [actioncommand=8869c4e1-660f-4a9b-a740-d6775b1b82bb name='Look forward left'
+      [actionblock
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000050 page=0x00000007 value=0x00000001]]]
+    [actioncommand=98f0d0ba-5135-4887-84ac-ba0bcfcb5e59 name='Trim up'
+      [actionblock
+        [action device=keyboard usage=0x00000059 page=0x00000007 value=0x00000001]]]
+    [actioncommand=49dc9ee7-0cd4-4241-9ad0-597290dc404e name='Decrease flaps'
+      [actionblock
+        [action device=keyboard usage=0x0000003F page=0x00000007 value=0x00000001]]]
+    [actioncommand=e12e040b-9caa-4fbf-96d5-d59abc450fba name='Raise position'
+      [actionblock
+        [action device=keyboard usage=0x0000002C page=0x00000007 value=0x00000001]]]
+    [actioncommand=4819fafd-9db5-4162-9d11-ad5f2c8789ea name='Throttle cut'
+      [actionblock
+        [action device=keyboard usage=0x0000003A page=0x00000007 value=0x00000001]]]
+    [actioncommand=fc98ff65-cc46-4bb0-b69d-6288ba936a71 name='Throttle decrease'
+      [actionblock
+        [action device=keyboard usage=0x0000003B page=0x00000007 value=0x00000001]]]
+    [actioncommand=42467673-e271-4a17-b4d6-53a595f8732e name='Select altitude bug'
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000001A page=0x00000007 value=0x00000001]]]
+    [actioncommand=d3cfde0d-8631-41af-aa35-e2ff81f2d42a name=Plus
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000057 page=0x00000007 value=0x00000001]]]
+    [actioncommand=4b2c81bd-ae8d-4d4e-859a-16e40a85bbc9 name=Minus
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000056 page=0x00000007 value=0x00000001]]]
+    [actioncommand=e177c635-8498-4506-ac5e-4206d786a099 name='Select heading bug'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000B page=0x00000007 value=0x00000001]]]
+    [actioncommand=b7183c74-f64e-4663-b862-9e76484fd2dd name='Select VSI bug'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000F page=0x00000007 value=0x00000001]]]
+    [actioncommand=84ba219a-a11f-4fef-ae3c-bb31d71bc209 name='Select airspeed bug'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000015 page=0x00000007 value=0x00000001]]]
+    [actioncommand=b36dc9c0-1efd-4982-8a42-3e660ad92862 name='Toggle AP nav'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000011 page=0x00000007 value=0x00000001]]]
+    [actioncommand=fc054439-4471-425e-b17c-3fe1cf6a31da name='Arm auto throttle'
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000015 page=0x00000007 value=0x00000001]]]
+    [actioncommand=242d876a-e3b0-4fdd-aa69-519e38fa86f4 name='Autothrottle disconnect'
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000008 page=0x00000007 value=0x00000001]]]
+    [actioncommand=5ade326e-9428-474e-87b6-cb93f46e8d3d name='Decrease light potentiometer'
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000F page=0x00000007 value=0x00000001]]]
+    [actioncommand=e782f398-0347-40d0-8a01-64fba669dfe5 name='Increase light potentionmeter'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000F page=0x00000007 value=0x00000001]]]
+    [actioncommand=b600c9c3-5df2-49e7-b870-b431fa60f52b name=Checklist
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000006 page=0x00000007 value=0x00000001]]]
+    [actioncommand=a5a8c4fd-cea5-4603-9588-715b2116035b name=Zoom
+      [actionblock
+        [action device=keyboard usage=0x0000002E page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000002E page=0x00000007]]
+      [actionblock type=repeat
+        [action device=keyboard time=0x000000C8 usage=0x0000002E page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000002E page=0x00000007]]
+      [actionblock=macro type=release]]
+    [actioncommand=42ee19a2-a5ba-428e-ba97-2df2f41ead65 name=Unzoom
+      [actionblock
+        [action device=keyboard usage=0x00000057 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000057 page=0x00000007]]
+      [actionblock type=repeat
+        [action device=keyboard time=0x000000C8 usage=0x00000057 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000057 page=0x00000007]]
+      [actionblock=macro type=release]]
+    [actioncommand=439a5d16-592f-45e9-ae30-14a0cface6b2 name='Increase cowl flap'
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000019 page=0x00000007 value=0x00000001]]]
+    [actioncommand=fa590599-ff04-4c95-a01c-3955a6b29aa5 name='Decrease cowl flap'
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000006 page=0x00000007 value=0x00000001]]]
+    [actioncommand=a9cf85bf-8119-4b4f-9553-6c0ceeb60935 name='Toggle landing lights'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000F page=0x00000007 value=0x00000001]]]
+    [actioncommand=58396d87-e54e-4040-bb2f-4f2ee5bd1962 name='Toggle taxi lights'
+      [actionblock
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000D page=0x00000007 value=0x00000001]]]
+    [actioncommand=722e2ff2-6334-4801-bd8f-b7e48b1e47f0 name='Toggle strobes'
+      [actionblock
+        [action device=keyboard usage=0x00000012 page=0x00000007 value=0x00000001]]]
+    [actioncommand=72752e86-2431-41b7-8610-d75232aa196f name='Toggle beacon lights'
+      [actionblock
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000B page=0x00000007 value=0x00000001]]]
+    [actioncommand=d5bfea03-4114-47ff-97b9-7793670a3819 name='Toggle nav lights'
+      [actionblock
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000011 page=0x00000007 value=0x00000001]]]
+    [actioncommand=b58154e9-53d2-484d-8f22-eaa894068525 name='Toggle cabin lights'
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000012 page=0x00000007 value=0x00000001]]]
+    [actioncommand=c309b9cd-74bc-4b51-8057-2029b81d8171 name='Panel lights OFF'
+      [actionblock
+        [action device=keyboard usage=0x000000E5 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E4 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000013 page=0x00000007 value=0x00000001]]]
+    [actioncommand=a68827d5-4b93-46b0-b4e1-1fbe9c108a4c name='Panel lights ON'
+      [actionblock
+        [action device=keyboard usage=0x000000E6 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E4 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000013 page=0x00000007 value=0x00000001]]]
+    [actioncommand=c3154ea6-0eca-4d58-ae00-c1159f78aee1 name='Toggle landing gear'
+      [actionblock
+        [action device=keyboard usage=0x0000000A page=0x00000007 value=0x00000001]]]
+    [actioncommand=5835af3f-7159-4945-ad12-7b54f4cc531f name='Master battery On'
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000033 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000064 usage=0x00000033 page=0x00000007]
+        [action device=keyboard usage=0x000000E2 page=0x00000007]
+        [action device=keyboard usage=0x000000E1 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=d2df8c1c-2011-4f8a-af1c-58b7e65cee92 name='Master battery Off'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000033 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000064 usage=0x00000033 page=0x00000007]
+        [action device=keyboard usage=0x000000E2 page=0x00000007]
+        [action device=keyboard usage=0x000000E1 page=0x00000007]
+        [action device=keyboard usage=0x000000E0 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=88ce5651-dd70-4f9b-b552-6b9fd250a12c name='Alternator ON/OFF'
+      [actionblock
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000011 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x0000000A usage=0x00000011 page=0x00000007]
+        [action device=keyboard usage=0x000000E1 page=0x00000007]
+        [action device=keyboard usage=0x000000E2 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000011 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x0000000A usage=0x00000011 page=0x00000007]
+        [action device=keyboard usage=0x000000E2 page=0x00000007]
+        [action device=keyboard usage=0x000000E1 page=0x00000007]
+        [action device=keyboard usage=0x000000E0 page=0x00000007]]]
+    [actioncommand=bfa3bb84-7ea7-497a-bcfc-e6eea9e15008 name='Toggle fuel selector'
+      [actionblock
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000001D page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000064 usage=0x0000001D page=0x00000007]
+        [action device=keyboard usage=0x000000E2 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000001D page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000064 usage=0x0000001D page=0x00000007]
+        [action device=keyboard usage=0x000000E2 page=0x00000007]
+        [action device=keyboard usage=0x000000E0 page=0x00000007]]]
+    [actioncommand=3eb144fb-d44b-491d-aa94-f2a3b01268b3 name='Toggle avionics 1 '
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000005 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000064 usage=0x00000005 page=0x00000007]
+        [action device=keyboard usage=0x000000E2 page=0x00000007]
+        [action device=keyboard usage=0x000000E1 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000014 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000064 usage=0x00000014 page=0x00000007]
+        [action device=keyboard usage=0x000000E2 page=0x00000007]
+        [action device=keyboard usage=0x000000E1 page=0x00000007]]]
+    [actioncommand=d02cfd5b-00e1-43be-b7f8-2fb3ca345ddd name='Toggle avionics 2'
+      [actionblock
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000037 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000064 usage=0x00000037 page=0x00000007]
+        [action device=keyboard usage=0x000000E2 page=0x00000007]
+        [action device=keyboard usage=0x000000E1 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000036 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000064 usage=0x00000036 page=0x00000007]
+        [action device=keyboard usage=0x000000E2 page=0x00000007]
+        [action device=keyboard usage=0x000000E1 page=0x00000007]]]
+    [actioncommand=1155c681-9446-4239-a2fe-98eeba6accdf name=Starter
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000016 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00001388 usage=0x00000016 page=0x00000007]
+        [action device=keyboard usage=0x000000E1 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=16eaeab0-d50b-4ec1-9eac-abdcd6352227 name='Toggle pump'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000013 page=0x00000007 value=0x00000001]]]
+    [actioncommand=932752ca-732f-45c4-a78f-317c46345add name='Pitot heat ON'
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000B page=0x00000007 value=0x00000001]]]
+    [actioncommand=e47b96fe-5a24-4827-a57d-afe0cdeb0dfe name='Pitot heat OFF'
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000010 page=0x00000007 value=0x00000001]]]
+    [actioncommand=7ae7e4af-c4e0-4dce-9b16-3de310c3f4b9 name='Shutoff valve ON'
+      [actionblock
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000012 page=0x00000007 value=0x00000001]]]
+    [actioncommand=7eb174d2-d4d8-4a96-b30b-4e9ac8a5c7fe name='Shutoff valve OFF'
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000012 page=0x00000007 value=0x00000001]]]
+    [actioncommand=2d601d57-1703-4f0c-94eb-9ef66f375af8 name='Toggle panel lights'
+      [actionblock
+        [action device=keyboard usage=0x000000E6 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E4 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000013 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000064 usage=0x00000013 page=0x00000007]
+        [action device=keyboard usage=0x000000E6 page=0x00000007]
+        [action device=keyboard usage=0x000000E4 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release]]
+    [actioncommand=fda82612-f278-498e-ac47-957ab4f7bbe5 name='Toggle starter'
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000016 page=0x00000007 value=0x00000001]]]
+    [actioncommand=23abb0d5-9cbb-4dc7-a414-a8e2d2830fba name='Landing gear'
+      [actionblock
+        [action device=keyboard usage=0x0000000A page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000064 usage=0x0000000A page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x0000000A page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000064 usage=0x0000000A page=0x00000007]]]
+    [actioncommand=488a15c2-95fd-44d5-86af-e518793f2686 name='Windshield deice'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000059 page=0x00000007 value=0x00000001]]]
+    [actioncommand=82265ced-14fc-4a74-9142-6d7a82d5727a name='Structural deice'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000005A page=0x00000007 value=0x00000001]]]
+    [actioncommand=33bad094-8507-4aca-98f3-5da300cd5f2b name='Propeller deice'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000005B page=0x00000007 value=0x00000001]]]
+    [actioncommand=d43ffd7f-b45c-4ac3-b998-36b9b94413e8 name='Toggle generator'
+      [actionblock
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000014 page=0x00000007 value=0x00000001]]]
+    [actioncommand=126b89cf-81c6-440f-88b6-f268ec919fbc name='Toggle pitot heat'
+      [actionblock
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000000B page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000064 usage=0x0000000B page=0x00000007]
+        [action device=keyboard usage=0x000000E1 page=0x00000007]]
+      [actionblock type=repeat]
+      [actionblock=macro type=release
+        [action device=keyboard usage=0x000000E1 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x00000010 page=0x00000007 value=0x00000001]
+        [action device=keyboard time=0x00000064 usage=0x00000010 page=0x00000007]
+        [action device=keyboard usage=0x000000E1 page=0x00000007]]]
+    [actioncommand=2ecc85cd-0867-4d40-a928-62f8e0adbb15 name='Toggle engine bleed'
+      [actionblock
+        [action device=keyboard usage=0x000000E0 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x000000E2 page=0x00000007 value=0x00000001]
+        [action device=keyboard usage=0x0000005A page=0x00000007 value=0x00000001]]]]]
